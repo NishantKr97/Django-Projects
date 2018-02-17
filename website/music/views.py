@@ -1,7 +1,7 @@
-# from django.http import Http404
-# from django.shortcuts import render, get_object_or_404
-# from django.template import loader
-# from .models import Album, Song
+from django.http import Http404
+from django.shortcuts import render, get_object_or_404
+from django.template import loader
+from .models import Album, Song
 #
 #
 # def index(request):
