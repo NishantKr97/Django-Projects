@@ -5,7 +5,7 @@
 <ul>
     {% for albums in object_list %}
     <li>
-        <a href="{% url 'music:details' albums.id %}"> {{ albums.artist }}</a>
+        <a href="{% url 'music:detail' albums.id %}"> {{ albums.artist }}</a>
     </li>
     {% endfor %}
 </ul>
