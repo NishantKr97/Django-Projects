@@ -1,0 +1,14 @@
+django-admin startproject project_name : make new project
+python manage.py runserver : runs erver
+python manage.py startapp music : make new app
+python manage.py migrate : set up database
+python manage.py makemigrations music : connect models of 'music' to database  // music is app name
+python manage.py sqlmigrate music 0001 : displays models in sql form
+python manage.py createsuperuser : create admin
+table_name.objects.all() : gives all colums of the table table_name
+Creating new database entry:
+1. a = Album()
+a.title = "add"
+a.save()
+2. a = Album.objects.get(1)
+a.song_set.create(song_title="abcd", file_type="mp3") // since song uses a foreign key of album table

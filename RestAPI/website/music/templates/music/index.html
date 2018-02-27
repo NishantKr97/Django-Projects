@@ -1,0 +1,17 @@
+{% extends 'music/base.html' %}
+{% block body %}
+<h2>Here are all my Albums</h2>
+{% if object_list %}
+<ul>
+    {% for albums in object_list %}
+    <li>
+        <a href="{% url 'music:detail' albums.id %}"> {{ albums.artist }}</a>
+    </li>
+    {% endfor %}
+</ul>
+{% else %}
+<h3>Please add some albums to your list</h3>
+{% endif%}
+{% endblock %}
+
+
